@@ -3,39 +3,86 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>攻略サイト（仮）</title>
-  <style>
-    body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;max-width:960px;margin:40px auto;padding:0 16px;line-height:1.7}
-    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}
-    nav a{margin-right:12px}
-    .card{border:1px solid #ddd;border-radius:12px;padding:16px;margin:12px 0}
-    footer{margin-top:40px;color:#666;font-size:14px}
-  </style>
+  <title>就活攻略サイト</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <header>
-    <h1>就活攻略サイト（仮）</h1>
-    <nav>
-      <a href="index.html">ホーム</a>
-      <a href="tips.html">攻略メモ</a>
-    </nav>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="logo" href="./">
+        <span class="logo-badge"></span>
+        <span>就活攻略サイト</span>
+      </a>
+
+      <form class="search" onsubmit="return false;">
+        <input placeholder="サイト内検索（仮）" />
+        <button aria-label="search">🔍</button>
+      </form>
+
+      <div class="actions">
+        <a href="./bbs.html">掲示板</a>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <div class="card">
-      <h2>このサイトについて</h2>
-      <p>研究室内で使う用の試作。まずはHTMLだけで作る。就活情報どんどんいくよーーーー</p>
+  <nav class="navbar">
+    <div class="container nav">
+      <a class="active" href="./">ホーム</a>
+      <a href="./jobs.html">職種一覧</a>
+      <a href="./salary.html">年収ランキング</a>
+      <a href="./schedule.html">ES提出スケジュール</a>
+      <a href="./stocks.html">上場企業株価まとめ</a>
+      <a href="./bbs.html">情報交換掲示板</a>
     </div>
+  </nav>
 
-    <div class="card">
-      <h2>最新記事</h2>
-      <ul>
-        <li><a href="tips.html">攻略メモ（仮）</a></li>
-      </ul>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-box">
+        <h1 class="hero-title">就活を攻略するための情報をまとめる（仮）</h1>
+        <p class="hero-sub">まずはUIの骨格だけ作成。中身（データ）は後から追加。</p>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <div class="card-h"><span class="pip"></span>最新記事（仮）</div>
+        <div class="card-b">
+          <div class="list">
+            <a class="item" href="./salary.html">
+              <div class="thumb">thumb</div>
+              <div>
+                <div class="title">年収ランキングの見せ方（仮）</div>
+                <div class="meta">カテゴリ：年収 / 更新：2026-02-11</div>
+              </div>
+            </a>
+            <a class="item" href="./schedule.html">
+              <div class="thumb">thumb</div>
+              <div>
+                <div class="title">ES提出スケジュールの見せ方（仮）</div>
+                <div class="meta">カテゴリ：スケジュール / 更新：2026-02-11</div>
+              </div>
+            </a>
+            <a class="item" href="./jobs.html">
+              <div class="thumb">thumb</div>
+              <div>
+                <div class="title">職種一覧ページ（仮）</div>
+                <div class="meta">カテゴリ：職種 / 更新：2026-02-11</div>
+              </div>
+            </a>
+          </div>
+
+          <p class="small" style="margin:12px 0 0;">
+            ※いまはダミー。後でJSON/CSVやスプレッドシートから差し替え可能。
+          </p>
+        </div>
+      </section>
     </div>
   </main>
 
-  <footer>© 2026</footer>
+  <footer class="footer">
+    <div class="container">© 2026 就活攻略サイト</div>
+  </footer>
 </body>
 </html>
 
