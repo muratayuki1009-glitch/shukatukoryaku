@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>上場企業株価まとめ | 就活攻略サイト</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="logo" href="./"><span class="logo-badge"></span><span>就活攻略サイト</span></a>
+      <form class="search" onsubmit="return false;"><input placeholder="銘柄/コードを検索（仮）"><button>🔍</button></form>
+      <div class="actions"><a href="./bbs.html">掲示板</a></div>
+    </div>
+  </header>
+  <nav class="navbar">
+    <div class="container nav">
+      <a href="./">ホーム</a>
+      <a href="./jobs.html">職種一覧</a>
+      <a href="./salary.html">年収ランキング</a>
+      <a href="./schedule.html">ES提出スケジュール</a>
+      <a class="active" href="./stocks.html">上場企業株価まとめ</a>
+      <a href="./bbs.html">情報交換掲示板</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-box">
+        <h1 class="hero-title">上場企業株価まとめ（仮）</h1>
+        <p class="hero-sub">後でAPIや手入力データで差し替える想定</p>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <div class="card-h"><span class="pip"></span>銘柄リスト（仮）</div>
+        <div class="card-b">
+          <table class="table">
+            <thead><tr><th>企業</th><th>コード</th><th>メモ</th></tr></thead>
+            <tbody>
+              <tr><td>Company A</td><td>1234</td><td>ダミー</td></tr>
+              <tr><td>Company B</td><td>5678</td><td>ダミー</td></tr>
+            </tbody>
+          </table>
+          <p class="small" style="margin:12px 0 0;">※GitHub Pagesだけだと自動取得は別仕組みが必要（いまはUIだけ）。</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container">© 2026 就活攻略サイト</div></footer>
+</body>
+</html>
